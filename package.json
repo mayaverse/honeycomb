@@ -13,7 +13,6 @@
     "dev": "npm run clean && rollup --config --watch",
     "lint": "eslint \"{,!(dist)/**/}*.{js,ts}\" --fix",
     "playground": "parcel playground/index.html --out-dir playground/dist --cache-dir playground/.cache",
-    "postinstall": "husky install",
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable",
     "prerelease": "npm run lint && npm test && NODE_ENV=production npm run build",
@@ -29,12 +28,9 @@
     "@types/node": "~14.14.31",
     "@typescript-eslint/eslint-plugin": "4.22.0",
     "@typescript-eslint/parser": "4.22.0",
-    "commitizen": "4.2.3",
-    "cz-conventional-changelog": "3.3.0",
     "eslint": "7.24.0",
     "eslint-config-prettier": "8.2.0",
     "eslint-plugin-jest": "24.3.5",
-    "husky": "6.0.0",
     "jest": "26.6.3",
     "parcel-bundler": "1.12.5",
     "pinst": "2.1.6",
@@ -64,10 +60,5 @@
   "bugs": {
     "url": "https://github.com/flauwekeul/honeycomb/issues"
   },
-  "homepage": "http://abbekeultjes.nl/honeycomb",
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  }
+  "homepage": "http://abbekeultjes.nl/honeycomb"
 }
